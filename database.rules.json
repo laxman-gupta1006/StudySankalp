@@ -1,0 +1,29 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": "auth != null",
+    "playlists": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    "users": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid",
+        "lastVisitedPlaylist": {
+          ".read": "$uid === auth.uid",
+          ".write": "$uid === auth.uid"
+        },
+        "playlists": {
+          ".indexOn": "playlistId", // Add this line to create an index on playlistId
+          "$playlistId": {
+            ".read": "$uid === auth.uid",
+            ".write": "$uid === auth.uid"
+          }
+        }
+      }
+    }
+  }
+}
