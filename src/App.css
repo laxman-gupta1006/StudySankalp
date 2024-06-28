@@ -120,6 +120,7 @@ nav {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  width: auto;
 }
 .video-player {
   flex-grow: 1;
@@ -447,7 +448,7 @@ h3 {
 
 
 /* notes */
-
+/* 
 .notes-container {
   margin-top: 20px;
 }
@@ -472,7 +473,7 @@ h3 {
   color: white;
   border-radius: 5px;
   cursor: pointer;
-}
+} */
 
 .notes-container button:hover {
   background-color: #218838;
@@ -492,7 +493,7 @@ h3 {
 }
 
 .notes-section textarea {
-  width: 100%;
+  width: 90%;
   height: 100px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -517,6 +518,7 @@ h3 {
   height: 100%;
   width: 100%;
   display: flex;
+  padding: 0px;
 }
 
 
