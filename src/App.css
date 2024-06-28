@@ -601,7 +601,8 @@ button.secondary:hover {
   margin: auto;
   padding: 2rem;
   display: flex;
-  justify-content: flex-end; /* Align content to the right */
+  justify-content: flex-end;
+  flex-direction: column; /* Align content to the right */
 }
 
 .description_home {
@@ -692,3 +693,10 @@ button.secondary:hover {
     display: none;
   }
 }
+
+
+
+
+/* aboutus nwe */
+
+

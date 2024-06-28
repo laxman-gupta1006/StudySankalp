@@ -24,7 +24,7 @@ const Navbar = () => {
                 <a href="/">Home</a>
                 <a href="/playlist">Player</a>
                 <a href="/contact">Contact</a>
-                <a href="/all_playlist">All Playlist</a>
+                <a href="/all_playlist">All Playlists</a>
             </div>
             {user ? (
                 <div className="user-menu" onClick={toggleDropdown}>
