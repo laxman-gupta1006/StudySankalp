@@ -37,16 +37,17 @@ nav {
   color: #3b5998;
 }
 .login-btn {
-  background-color: #3b5998;
-  color: white;
+  background-color: red; /* Set background color to red */
+  color: white; /* Text color */
+  padding: 10px 20px;
   border: none;
-  padding: 0.5rem 1rem;
+  border-radius: 5px;
   cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .login-btn:hover {
-  background-color: #2d4373;
+  opacity: 0.8; /* Adjust opacity on hover */
 }
 .menu-icon {
   display: none;
@@ -282,7 +283,7 @@ nav {
   display: block;
 }
 
-.login-btn, .logout-btn {
+/* .login-btn, .logout-btn {
   background-color: #007bff;
   color: white;
   border: none;
@@ -293,7 +294,7 @@ nav {
 
 .login-btn:hover, .logout-btn:hover {
   background-color: #0056b3;
-}
+} */
 
 /* current playing */
 
@@ -543,7 +544,7 @@ button:hover {
 }
 
 /* Primary button style */
-.login-btn,
+/* .login-btn,
 .logout-btn,
 button.primary {
   background-color: #3b5998;
@@ -554,7 +555,7 @@ button.primary {
 .logout-btn:hover,
 button.primary:hover {
   background-color: #2d4373;
-}
+} */
 
 /* Secondary button style */
 button.secondary {

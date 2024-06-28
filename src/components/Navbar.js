@@ -4,9 +4,14 @@ import { useAuth } from '../AuthContext';
 const Navbar = () => {
     const { login, user, logout } = useAuth();
     const [dropdownVisible, setDropdownVisible] = useState(false);
+    const [menuVisible, setMenuVisible] = useState(false);
 
     const toggleDropdown = () => {
         setDropdownVisible(!dropdownVisible);
+    };
+
+    const toggleMenu = () => {
+        setMenuVisible(!menuVisible);
     };
 
     return (
@@ -15,7 +20,7 @@ const Navbar = () => {
                 <span className="logo">StudySankalp</span>
             </div>
             <span className="menu-icon" onClick={toggleMenu}>&#9776;</span>
-            <div className="nav-links" id="navLinks">
+            <div className={`nav-links ${menuVisible ? 'show' : ''}`} id="navLinks">
                 <a href="/">Home</a>
                 <a href="/playlist">Player</a>
                 <a href="/contact">Contact</a>
@@ -37,19 +42,10 @@ const Navbar = () => {
                     )}
                 </div>
             ) : (
-                <button className="login-btn" onClick={login}>Login</button>
+                <button className="login-btn" onClick={login}>Login with Google</button>
             )}
         </nav>
     );
-}
-
-function toggleMenu() {
-    var navLinks = document.getElementById("navLinks");
-    if (navLinks.style.display === "flex") {
-        navLinks.style.display = "none";
-    } else {
-        navLinks.style.display = "flex";
-    }
 }
 
 export default Navbar;
