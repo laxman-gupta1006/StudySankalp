@@ -66,8 +66,9 @@ const PlaylistList = () => {
 
     return (
         <div className="playlist-list">
-            <AddPlaylist />
             {user ? (
+                <>
+                <AddPlaylist />
                 <div className="playlist-table">
                     {playlists.map((playlist) => (
                         <div key={playlist.id} className="playlist-row">
@@ -92,6 +93,7 @@ const PlaylistList = () => {
                         </div>
                     ))}
                 </div>
+                </>
             ) : (
                 <div className="login-bar">
                     <p>Please log in to view your playlists.</p>
