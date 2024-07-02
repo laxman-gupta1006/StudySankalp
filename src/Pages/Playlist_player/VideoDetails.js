@@ -6,7 +6,6 @@ const VideoDetails = ({ title, description, onComplete, onNext }) => {
             <h3>{title}</h3>
             <div>
             <button onClick={onComplete}>Complete</button>
-            <button onClick={onNext}>Next Video</button>
             </div>
         </div>
     );

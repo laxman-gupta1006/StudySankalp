@@ -1,71 +1,66 @@
-# Getting Started with Create React App
+## StudySankalp - Your YouTube Study Companion
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Description:**
 
-## Available Scripts
+StudySankalp is a web application designed to enhance your learning experience using YouTube playlists. It provides a distraction-free environment, progress tracking, note-taking capabilities, and a user-friendly interface to help you conquer your studies.
 
-In the project directory, you can run:
+**Key Features:**
 
-### `npm start`
+- **Distraction-Free Mode:** Eliminates surrounding clutter to keep you focused on the learning materials.
+- **Progress Tracking:** Monitors your mastery level across playlists, providing a sense of accomplishment and motivation.
+- **Personal Notes:** Jot down valuable insights and key takeaways from videos for better retention.
+- **User-Friendly Interface:** Intuitive design facilitates seamless navigation and engagement with the platform.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Getting Started**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Prerequisites:**
 
-### `npm test`
+- Node.js and npm (or yarn) installed on your system. You can download them from the official Node.js website: https://nodejs.org/en
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Clone the Repository:**
 
-### `npm run build`
+git clone https://github.com/your-username/studysankalp.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Install Dependencies:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+cd studysankalp
+npm install (or yarn install)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Create a Firebase Project:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Head over to the Firebase console (https://console.firebase.google.com/) and create a new project.
+2. Follow the Firebase documentation to set up your project and enable the necessary services (e.g., Firestore, Authentication).
+3. Create a `.env.local` file in your project root and add your Firebase configuration details (API key, project ID, etc.) following the format specified in the Firebase documentation.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Start the Development Server:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm start (or yarn start)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This will start the development server, typically running on http://localhost:3000 by default.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Deployment**
 
-### Code Splitting
+**Build for Production:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+npm run build (or yarn build)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This creates an optimized production build in the `build` folder.
 
-### Making a Progressive Web App
+**Deploy to Firebase:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Use the Firebase CLI (`firebase deploy`) to deploy your built application to Firebase Hosting. You can find detailed deployment instructions in the Firebase documentation. Make sure you've initialized Firebase in your project using `firebase init` if you haven't already.
 
-### Advanced Configuration
+**Usage**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Once deployed, access your StudySankalp application at `https://studysankalp.web.app` (replace with your actual Firebase project URL). You can sign in using your Google account, create and manage playlists, track your progress, and take notes to optimize your learning journey.
 
-### Deployment
+**Additional Notes:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
+- Consider using a linter and code formatter (e.g., ESLint, Prettier) to maintain code quality and consistency.
+- Implement unit tests to ensure the functionality of your components.
+- Explore continuous integration/continuous delivery (CI/CD) for automated testing and deployment.
+- Provide clear instructions on how to customize the application (e.g., email address, 
